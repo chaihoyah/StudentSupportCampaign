@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>TEST PAGE</h1>
+    <button onClick="goPost();">사용신청</button>
+    <button onClick="goPost_open();">열기</button>
+    <button onClick="goPost_close();">닫기</button>
+  </body>
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <script src="./post.js"></script>
+  <script>
+  // user data
+  var data = {
+    id: "id",
+    value: "value",
+    name: "name"
+  }
+  // reservation을 위한 function
+  function goPost()
+  {
+    callPost(data);
+  }
+  // open을 위한 function
+  function goPost_open()
+  {
+    callPost_open(data);
+  }
+  // close를 위한 function
+  function goPost_close()
+  {
+    callPost_close(data);
+  }
+  </script>
+</html>
